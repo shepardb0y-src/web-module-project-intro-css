@@ -11,7 +11,6 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 	outline: 0;
 	padding: 0;
 	margin: 0;
-	border: 0;
 	}
 /* remember to define focus styles! */
 :focus {
@@ -22,10 +21,7 @@ ol, ul {
 	list-style: none;
 	}
 /* tables still need cellspacing="0" in the markup */
-table {
-	border-collapse: separate;
-	border-spacing: 0;
-	}
+
 caption, th, td {
 	font-weight: normal;
 	text-align: left;
@@ -57,6 +53,7 @@ body{
     font-size:1.6rem;
     line-height:1.5;
     color: #4f4f4f; /*accesibility*/
+    font-family: 'Roboto Mono', monospace;
 }
 h1{
     font-family: 'chelsea Market', cursive;
@@ -68,7 +65,7 @@ section{
 }
 a{
     text-decoration: none;
-    font-family: 'Roboto Mono', cursive;
+    font-family: 'Roboto Mono', monospace;
 }
 
 /* header styles */
@@ -84,18 +81,43 @@ nav a{
     border-radius: 10px;
     text-align:center;
     color:#fff;
-    }
-
-    .orange{
+    }   
+ .orange{
         background-color: #ff764e;
         margin-left: 10%;
 
-    }   .blue{
+    }  
+ .blue{
         background-color: #5ed3eb;
         margin: 0 24%;
-    }
-
-    .yellow{
+    }   
+ .yellow{
         background-color: #ffcd69;
         margin-right: 10%;
     }
+
+    /*top section styles */
+
+    .top{
+        position: relative;
+    }
+
+ .left, .right{
+        display:inline-block;
+        text-align:center;
+    } 
+.left{
+        width:35%;
+    } 
+
+  .left img{
+      width:80%;
+      border-radius: 50%;
+}
+
+.right{
+    width:60%;
+    position: relative;
+    top:45%;
+}
+
